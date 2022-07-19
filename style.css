@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(195, 189, 189);
+}
+    
+div{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+div > a{
+    text-decoration: none;
+    color: #000;
+}
+
+div > a > p{
+    display: inline;
+}
+
+div > img{
+    width: 20px;
+    height: 20px;
+}
+
+header{
+    background-color: #0b5f71ca;
+    min-height: 150px;
+    padding-top: 10px;
+    border-bottom: 3px solid;
+}
+
+header > a > h1{
+    text-shadow: 3px 3px 2px black;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+    text-align: center;
+    color: rgb(212, 204, 204);
+    font-family: 'Oswald', sans-serif;
+}
+
+header > a{
+    text-decoration: none;
+}
+
+header > a:hover{
+    text-decoration: none;
+}
+
+header > div > p{
+    text-align: left;
+}
+
+header > div > p{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    color: #021c23ca;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+header > div > nav > a:hover{
+    background-color: #f4f9fbca;
+}
+
+nav{
+    padding: 10px;
+    display: inline;
+}
+
+main > h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size:2.5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+main > a > p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.8em;
+    text-decoration: underline;
+    text-decoration-color: rgb(38, 78, 166);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(10, 10, 10);
+}
+
+@media (max-width: 1000px){
+    main > a > p{
+        font-size: 1.5em;
+    }
+
+}
+
+#add{
+    margin-bottom: 100px;
+}
+
+.icons{
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    width: 25px;
+}
+
+#box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#midia{
+    margin: 10px 10px 0px 10px;
+}
+
+footer{
+    background-color: #0b5f71ca;
+    height: 160px;
+    border-top: 3px solid;
+    padding: 40px 0px 0px 0px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer > p > a{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color: black;
+}
