@@ -28,6 +28,7 @@ div > a{
 
 div > a > p{
     display: inline;
+    padding-right: 22px;
 }
 
 div > img{
@@ -70,7 +71,8 @@ header > div > p{
     display: inline;
     color: #021c23ca;
     border-radius: 5px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px;
+    padding-left: 30px;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
@@ -115,7 +117,7 @@ main > a > p{
 }
 
 .icons{
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     transition-duration: 0.5s;
     width: 25px;
@@ -128,6 +130,7 @@ main > a > p{
 
 #midia{
     margin: 10px 10px 0px 10px;
+    padding-left: 10px;
 }
 
 footer{
@@ -143,4 +146,20 @@ footer > p > a{
     text-decoration: underline;
     text-decoration-color: blue;
     color: black;
+}
+
+#padding20{
+    padding-right: 25px;
+}
+
+#sdz{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    color: #021c23ca;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    text-decoration: underline;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    width: 220px;
 }
