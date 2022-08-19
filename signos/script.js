@@ -5,7 +5,7 @@ function submit(){
     else{
         var month = document.getElementById('month').value
 
-        if (month.toLowerCase() == "março"){
+        if (month.toLowerCase() == "março" || "March"){
             alert("mes ok")
         }
         else{

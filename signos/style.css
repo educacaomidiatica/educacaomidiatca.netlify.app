@@ -54,7 +54,6 @@ h2{
 }
 
 input{
-    display: block;
     width: 220px;
     height: 50px;
     margin-top: 40px;
@@ -65,9 +64,9 @@ input{
     box-shadow: 1px 1px 1px black;
     color: #000;
     font-family: monospace;
+    display: flex;
+    justify-content: center;
 }
-
-
 
 #form{
     display: flex;
@@ -77,9 +76,14 @@ input{
     font-size: 1.4em;
     color: rgb(16, 16, 107);
     text-decoration: underline;
+
 }
 
 #submit{
     padding: 20px;
     width: 240px;
+}
+
+#box{
+    margin: auto;
 }
