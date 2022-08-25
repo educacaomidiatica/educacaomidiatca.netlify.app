@@ -6,13 +6,11 @@ function submit(){
         var month = document.getElementById('month').value
 
         if (month.toLowerCase() == "março" || "March"){
-            alert("mes ok")
+            var form = document.getElementById('form')
+            form.href = "Peixes/index.html"               
         }
         else{
             alert('mes not ok')
         }
-        var form = document.getElementById('form')
-        form.href = "http://127.0.0.1:5500/sdz/peixe/index.html"
     }
-    console.log("ok")
 }
