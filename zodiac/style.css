@@ -87,3 +87,8 @@ input{
 #box{
     margin: auto;
 }
+
+main{
+    font-family: monospace;
+    font-size: 1.6em;
+}
