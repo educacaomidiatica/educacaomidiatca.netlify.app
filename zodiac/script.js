@@ -2,10 +2,10 @@ function submit(){
 
     let name = document.getElementById('name').value
     let main = document.getElementById('main')
-    
+
     main.innerHTML = ""
     main.innerText = ""
-    
+
     if (name.length == 0){
         alert('Nome invalido!')
     }
@@ -16,35 +16,47 @@ function submit(){
 
     for (var i = 0; i < name.length; i++){
         
-        switch(i){
-            case('a'):
-                vogais += 1
-            case('j'|'s'):
-                consoantes += 1
-            case('b'|'k'|'t'):
-                consoantes += 2
-            case('u'):
-                vogais += 3
-            case('c'|'l'):
-                consoantes += 3
-            case('d'|'m'|'v'):
-                consoantes += 4
-            case('e'):
-                vogais += 5
-            case('n'|'w'):
-                consoantes += 5
-            case('o'):
-                vogais += 6
-            case('f'|'x'):
-                consoantes += 6
-            case('g'|'p'|'y'):
-                consoantes += 7
-            case('h'|'q'|'z'):
-                consoantes += 8
-            case('r'):
-                consoantes += 9
-            case('i'):
-                vogais += 9
+       if(/A|a/.test(name[i])){
+            vogais += 1
+        }
+        else if(/J|j|S|s/.test(name[i])){
+            consoantes += 1
+        }
+        else if(/B|b|K|k|T|t/.test(name[i])){
+            consoantes += 2
+        }
+        else if(/U|u/.test(name[i])){
+            vogais += 3
+        }
+        else if(/C|c|L|l/.test(name[i])){
+            consoantes += 3
+        }
+        else if(/D|d|M|m|V|v/.test(name[i])){
+            consoantes += 4
+        }
+        else if(/E|e/.test(name[i])){
+            vogais += 5
+        }
+        else if(/N|n|W|w/.test(name[i])){
+            consoantes += 5
+        }
+        else if(/O|o/.test(name[i])){
+            vogais += 6
+        }
+        else if(/F|f|X|x/.test(name[i])){
+            consoantes += 6
+        }
+        else if(/G|g|P|p|Y|y/.test(name[i])){
+            consoantes += 7
+        }
+        else if(/H|h|Q|q|Z|z/.test(name[i])){
+            consoantes += 8
+        }
+        else if(/R|r/.test(name[i])){
+            consoantes += 9
+        }
+        else if(/I|i/.test(name[i])){
+            vogais += 9
         }
 
     }
@@ -89,6 +101,7 @@ function submit(){
     }
     sintese = parseInt(sintese)
 
+    console.log(vogais, consoantes, sintese)
 
     if(vogais == 1){
         main.innerText += "\n\nInterior: Preza pela sua individualidade e independência, é um líder nato e tende a querer comandar as suas relações."
@@ -120,7 +133,7 @@ function submit(){
     else if(vogais == 11){
         main.innerText += "\n\nInterior: São pessoas transcendentais, é difícil conseguir compreendê-los por completo pois como são pessoas dotadas de muitas sabedorias diferentes, tem comportamento diverso, é uma caixinha de surpresas"        
     }
-    else{
+    else if(vogais == 22){
         main.innerText += "\n\nInterior: São pessoas emocionalmente delicadas que se voltam à realização de ações em benefício do próximo e do mundo, mesmo que pareça impossível."
     }
 
@@ -155,7 +168,7 @@ function submit(){
     else if(consoantes == 11){
         main.innerText += "\n\nExterior: Transmite um ar de mistério e parece inatingível ou incompreensível."
     }        
-    else{
+    else if(consoantes == 22){
         main.innerText += "\n\nExterior: São pessoas que parecem estar prontos para enfrentar qualquer situação na vida, tamanha sabedoria para lidar com as questões complicadas."
     }
         
