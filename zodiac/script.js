@@ -1,13 +1,19 @@
 function submit(){
+
     let name = document.getElementById('name').value
+    let main = document.getElementById('main')
+    
+    main.innerHTML = ""
+    main.innerText = ""
+    
     if (name.length == 0){
         alert('Nome invalido!')
     }
-    console.log(name + " : " + typeof(name) + '\n\n' + 'size: ' + name.length)
-    
+
     name.split("")
     var vogais = 0
     var consoantes = 0
+
     for (var i = 0; i < name.length; i++){
         
         switch(i){
@@ -83,10 +89,7 @@ function submit(){
     }
     sintese = parseInt(sintese)
 
-    let main = document.getElementById('main')
-    // main.innerText += "Interior: " + vogais + '\n\n\n\nExterior: ' + consoantes + '\n\nSíntese: ' + sintese
-    console.log("Interior: " + vogais + "\n\nExterior: " + consoantes + "\n\nSintese: " + sintese)
-    
+
     if(vogais == 1){
         main.innerText += "\n\nInterior: Preza pela sua individualidade e independência, é um líder nato e tende a querer comandar as suas relações."
     }
