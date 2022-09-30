@@ -71,12 +71,12 @@ input{
 #form{
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 25px;
     font-family: sans-serif;
     font-size: 1.4em;
     color: rgb(16, 16, 107);
     text-decoration: underline;
-
+    margin-bottom: 50px;
 }
 
 #submit{
@@ -91,6 +91,10 @@ input{
 main{
     font-family: monospace;
     font-size: 1.6em;
+    background-color: rgba(48, 114, 108, 0.808);
+    padding: 22px;
+    border-width: medium;
+    border-style: solid;
 }
 
 @media (max-width: 1000px){
