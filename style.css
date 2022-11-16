@@ -163,3 +163,31 @@ footer > p > a{
     transition-duration: 0.5s;
     width: 220px;
 }
+
+#sig{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    color: #021c23ca;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    text-decoration: underline;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    width: 83px;
+}
+
+#sm{
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    color: #021c23ca;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    text-decoration: underline;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    width: 87px;
+}
+
+#space1{
+    margin-top: 180px;
+}
